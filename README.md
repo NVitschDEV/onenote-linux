@@ -35,4 +35,4 @@ The output is `dist/OneNote-1.3.0-x86_64.AppImage`.
 
 ## Branding and affiliation
 
-The launcher icon is the Microsoft OneNote app icon shown on the [Microsoft OneNote App Store listing](https://apps.apple.com/us/app/microsoft-onenote/id410395246). This unofficial wrapper is not affiliated with or endorsed by Microsoft. Microsoft and OneNote are trademarks of Microsoft Corporation.
+This unofficial wrapper is not affiliated with or endorsed by Microsoft. Microsoft and OneNote are trademarks of Microsoft Corporation.
