@@ -1,6 +1,6 @@
-# OneNote for Linux — dedicated Helium app window
+# OneNote for Linu
 
-This unofficial AppImage launches Microsoft's official OneNote web app in its own Chromium-based app window and **its own persistent Helium profile**. That gives the OneNote app a separate browser process, so Helium receives the app-mode and notebook-routing flags even while your regular Helium browser is open. Notebook switches—including OneNote's blank-popup-then-navigation flow—stay in the app window. Microsoft sign-in popups remain separate.
+This unofficial AppImage launches Microsoft's official OneNote web app in its own Chromium-based app window and **its own persistent Chromium profile**. That gives the OneNote app a separate browser process, so Helium receives the app-mode and notebook-routing flags even while your regular Helium browser is open. Notebook switches—including OneNote's blank-popup-then-navigation flow—stay in the app window. Microsoft sign-in popups remain separate.
 
 ## Requirements
 
