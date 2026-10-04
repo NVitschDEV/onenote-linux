@@ -4,8 +4,7 @@ This unofficial AppImage launches Microsoft's official OneNote web app in its ow
 
 ## Requirements
 
-- **Helium** (recommended on Arch; app window, no tabs/address bar)
-- **Chromium/Chrome** (supported)
+- **Chromium Browser** (recommended on Arch; app window, no tabs/address bar)
 - **Firefox** (fallback; kiosk/full-screen mode; Chromium routing helper is not injected)
 
 The launcher searches `PATH` first for Helium (`helium-browser`, `helium`, or `helium-chromium`), then Chromium/Chrome, then Firefox. On Arch, the `helium-browser-bin` package exposes `helium-browser`.
