@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "OneNote Notebook Window Routing",
+  "version": "1.0.3",
+  "description": "Keeps OneNote notebook windows in the app while preserving authentication popups.",
+  "permissions": ["webNavigation"],
+  "host_permissions": [
+    "https://onenote.cloud.microsoft/*",
+    "https://*.cloud.microsoft/*",
+    "https://onenote.com/*",
+    "https://*.onenote.com/*",
+    "https://*.sharepoint.com/*",
+    "https://onedrive.live.com/*",
+    "https://*.onedrive.live.com/*",
+    "https://1drv.ms/*",
+    "https://office.com/*",
+    "https://*.office.com/*",
+    "https://microsoft365.com/*",
+    "https://*.microsoft365.com/*",
+    "https://login.microsoftonline.com/*",
+    "https://*.login.microsoftonline.com/*",
+    "https://login.live.com/*",
+    "https://account.live.com/*",
+    "https://login.windows.net/*",
+    "https://login.microsoft.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://onenote.cloud.microsoft/*",
+        "https://*.cloud.microsoft/*",
+        "https://onenote.com/*",
+        "https://*.onenote.com/*",
+        "https://*.sharepoint.com/*",
+        "https://onedrive.live.com/*",
+        "https://*.onedrive.live.com/*",
+        "https://1drv.ms/*",
+        "https://office.com/*",
+        "https://*.office.com/*",
+        "https://microsoft365.com/*",
+        "https://*.microsoft365.com/*"
+      ],
+      "js": ["route-links.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
