@@ -1,11 +1,10 @@
-# OneNote for Linux — dedicated Helium app window
+# OneNote for Linux
 
-This unofficial AppImage launches Microsoft's official OneNote web app in its own Chromium-based app window and **its own persistent Helium profile**. That gives the OneNote app a separate browser process, so Helium receives the app-mode and notebook-routing flags even while your regular Helium browser is open. Notebook switches—including OneNote's blank-popup-then-navigation flow—stay in the app window. Microsoft sign-in popups remain separate.
+This unofficial AppImage launches Microsoft's official OneNote web app in its own Chromium-based app window and **its own persistent Chromium profile**. That gives the OneNote app a separate browser process, so Helium receives the app-mode and notebook-routing flags even while your regular Helium browser is open. Notebook switches—including OneNote's blank-popup-then-navigation flow—stay in the app window. Microsoft sign-in popups remain separate.
 
 ## Requirements
 
-- **Helium** (recommended on Arch; app window, no tabs/address bar)
-- **Chromium/Chrome** (supported)
+- **Chromium Browser** (recommended on Arch; app window, no tabs/address bar)
 - **Firefox** (fallback; kiosk/full-screen mode; Chromium routing helper is not injected)
 
 The launcher searches `PATH` first for Helium (`helium-browser`, `helium`, or `helium-chromium`), then Chromium/Chrome, then Firefox. On Arch, the `helium-browser-bin` package exposes `helium-browser`.
@@ -36,4 +35,4 @@ The output is `dist/OneNote-1.3.0-x86_64.AppImage`.
 
 ## Branding and affiliation
 
-The launcher icon is the Microsoft OneNote app icon shown on the [Microsoft OneNote App Store listing](https://apps.apple.com/us/app/microsoft-onenote/id410395246). This unofficial wrapper is not affiliated with or endorsed by Microsoft. Microsoft and OneNote are trademarks of Microsoft Corporation.
+This unofficial wrapper is not affiliated with or endorsed by Microsoft. Microsoft and OneNote are trademarks of Microsoft Corporation.
